@@ -101,3 +101,9 @@
 [15128] Log opened at 2022-08-20 20:22:56.819208
 [15128] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
 [15128] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
+[7644] Log opened at 2022-08-26 17:13:50.210569
+[7644] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[7644] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
+[22304] Log opened at 2022-08-30 12:39:35.874759
+[22304] [Step Debug] INFO: Connecting to configured address/port: localhost:9003.
+[22304] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port) :-(
