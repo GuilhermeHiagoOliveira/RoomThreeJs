@@ -34,8 +34,8 @@ export default class Camera {
             (this.sizes.aspect * this.sizes.frustrum) / 0.8,
             this.sizes.frustrum / 0.8,
             -this.sizes.frustrum / 0.8,
-            -10,
-            10
+            -50,
+            50
         );
         
         this.orthographicCamera.position.x = 0;
@@ -60,7 +60,7 @@ export default class Camera {
 
     setOrbitControls() {
         this.controls = new OrbitControls(this.orthographicCamera, this.canvas);
-        this.controls.enableDamping = true;
+        this.controls.enableDamping = false;
         this.controls.enableZoom = false;
     }
 
