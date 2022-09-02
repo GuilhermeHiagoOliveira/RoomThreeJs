@@ -29,15 +29,16 @@ onMounted(() => {
                 <div class="hero-wrapper">
 
                     <div class="hero-main">
-                        <h1 class="hero-main-title">Lorem Ipsum</h1>
-                        <p class="hero-main-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti exercitationem cum ratione? Ducimus natus odit earum veritatis voluptas nostrum, quibusdam illo, fugit reiciendis incidunt explicabo placeat laborum impedit tenetur. Quo.</p>
+                        <h1 class="hero-main-title">CZ Brains</h1>
+                        <p class="hero-main-description">AGÊNCIA DE PUBLICIDADE</p>
+                        <p class="hero-main-description">E WEB EM CAMPINAS • SP</p>
                     </div>
 
                     <div class="hero-second">
-                        <h1 class="hero-second-subheading">Lorem Ipsum</h1>
-                        <p class="hero-second-subheading">Lorem</p>
+                        <p class="hero-second-subheading">Nossa missão é fazer a</p>
+                        <h1 class="hero-second-subheading">DIFERENÇA</h1>
+                        <p class="hero-second-subheading">nos seus sonhos</p>
                     </div>
-
                 </div>
             </section>
 

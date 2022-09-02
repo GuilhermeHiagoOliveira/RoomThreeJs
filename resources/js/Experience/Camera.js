@@ -17,9 +17,9 @@ export default class Camera {
     createPerspectiveCamera() {
         this.perspectiveCamera = new THREE.PerspectiveCamera(35, this.sizes.aspect, 0.1, 1000);
         this.scene.add(this.perspectiveCamera);
-        this.perspectiveCamera.position.x = 1.14;
-        this.perspectiveCamera.position.y = 5.57;
-        this.perspectiveCamera.position.z = -15;
+        // this.perspectiveCamera.position.x = 1.14;
+        // this.perspectiveCamera.position.y = 5.57;
+        // this.perspectiveCamera.position.z = -15;
         // this.helper2 = new THREE.CameraHelper(this.perspectiveCamera);
         // this.scene.add(this.helper2);
         // this.perspectiveCamera.position.x = 0;
@@ -38,11 +38,13 @@ export default class Camera {
             50
         );
         
+        this.orthographicCamera.setViewOffset(100, 100, 0, 0, 100, 100);
         this.orthographicCamera.position.x = 0;
-        this.orthographicCamera.position.y = 0.1;
+        this.orthographicCamera.position.y = 1;
         this.orthographicCamera.position.z = -12;
         this.orthographicCamera.rotation.x = Math.PI / 1;
-
+        
+        this.orthographicCamera.lookAt(0 ,0 ,100);
         this.scene.add(this.orthographicCamera);
 
         // this.helper = new THREE.CameraHelper(this.orthographicCamera);
