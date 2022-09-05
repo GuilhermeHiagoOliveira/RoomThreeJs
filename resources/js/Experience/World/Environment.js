@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import Experience from "@/Experience/Experience";
+import GSAP from "gsap";
 
 export default class Environment {
     constructor() {
@@ -11,6 +12,17 @@ export default class Environment {
     }
 
     setSunlight() {
+        // this.globalSun = new THREE.DirectionalLight("#ffffff", 20);
+        // this.globalSun.castShadow = true;
+        // this.globalSun.shadow.camera.far = 3;
+        // this.globalSun.shadow.mapSize.set(1024, 1024);
+        // this.globalSun.shadow.normalBias = 0.05;
+        // this.globalSun.position.set(0, 3, 12);
+        // this.scene.add(this.globalSun);
+
+        // this.helperLight = new THREE.DirectionalLightHelper(this.globalSun, 1);
+        // this.scene.add(this.helperLight);
+
         this.sunLight = new THREE.DirectionalLight("#fcbe03", 1);
         this.sunLight.castShadow = true;
         this.sunLight.shadow.camera.far = 3;
@@ -38,6 +50,32 @@ export default class Environment {
         // this.spotLight.shadow.camera.fov = 1;
 
         // this.scene.add(this.spotLight);
+    }
+
+    switchTheme(theme) {
+        if (theme === "dark") {
+            GSAP.to(this.sunLight.color, {
+                r: 0 / 255,
+                g: 0 / 255,
+                b: 0 / 255
+            });
+            GSAP.to(this.ambientLight.color, {
+                r: 0 / 255,
+                g: 0 / 255,
+                b: 0 / 255
+            });
+        } else {
+            GSAP.to(this.sunLight.color, {
+                r: 255 / 255,
+                g: 255 / 255,
+                b: 255 / 255
+            });
+            GSAP.to(this.ambientLight.color, {
+                r: 255 / 255,
+                g: 255 / 255,
+                b: 255 / 255
+            });
+        }
     }
 
     resize() {
